@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title >Acquaintance with form HTML tags part 3</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    </head>
+
+    <body>
+    <form action="#jmn" method="post" enctype="multipart/form-data">
+        <div>
+            <p>Имя</p>
+            <input placeholder="введите имя" tabindex="1" type="text" name="username">
+        </div>
+        <div>
+            <p>Пароль</p>
+            <input tabindex="2" type="password" name="userpass">
+        </div>
+        <div>
+            <p>Телефон</p>
+            <input tabindex="3" type="tel" name="phone_number">
+        </div>
+        <div>
+            <p>Пол</p>
+            <div>
+                <input tabindex="4" checked type="radio" name="gender" value="male"> Мужской
+            </div>
+            <div>
+                <input tabindex="4" type="radio" name="gender" value="female">Женский
+            </div>
+        </div>
+        <div>
+            <p>Имущество</p>
+            <div><input tabindex="5" checked type="checkbox" name="bicycle" value="yes">Велик</div>
+            <div><input tabindex="6" type="checkbox" name="car" value="yes">Машина</div>
+            <div><input tabindex="7" disabled type="checkbox" name="flat" value="yes">Квартира</div>
+        </div>
+        <div>
+            <p>Дополнительная информация</p>
+            <textarea tabindex="8" placeholder="введите дополнительную информацию" name="text"></textarea>
+        </div>
+        <div>
+            <p>Прикрепить фото</p>
+            <input tabindex="9" type="file" name="userphoto">
+        </div>
+        <div>
+            <p>Любимй цвет</p>
+            <select tabindex="10" name="color">
+                <option selected value="red">красный</option>
+                <option value="yellow">желтый</option>
+                <option value="black">черный</option>
+            </select>
+        </div>
+        <div>
+            <p>Действия</p>
+            <button tabindex="11" type="submit">отправить</button>
+            <button tabindex="12" type="reset">очистить</button>
+        </div>
+    </form>
+
+    </body>
+</html>
